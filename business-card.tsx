@@ -186,7 +186,7 @@ export default function Component() {
                     isDarkMode ? "text-gray-300 hover:text-blue-400" : "text-gray-700 hover:text-blue-600"
                   }`}
                 >
-                  <span className="truncate">info@mannai-ict.com</span>
+                  <span className="truncate">sys-sales@mannai.com.qa</span>
                   <Copy className="w-3 h-3 flex-shrink-0" />
                 </button>
                 {copySuccess && (
