@@ -28,43 +28,37 @@ export default function Component() {
 
   return (
     <div
-      className={`min-h-screen transition-all duration-500 flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8 relative overflow-hidden ${
-        isDarkMode
+      className={`min-h-screen transition-all duration-500 flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8 relative overflow-hidden ${isDarkMode
           ? "bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"
           : "bg-gradient-to-br from-blue-50 via-white to-gray-100"
-      }`}
+        }`}
     >
       {/* Full Background Animations */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         {/* Animated Gradient Orbs - Full Coverage */}
         <div
-          className={`absolute -top-32 -left-32 w-96 h-96 rounded-full blur-3xl animate-pulse ${
-            isDarkMode ? "bg-blue-500/10" : "bg-blue-400/20"
-          }`}
+          className={`absolute -top-32 -left-32 w-96 h-96 rounded-full blur-3xl animate-pulse ${isDarkMode ? "bg-blue-500/10" : "bg-blue-400/20"
+            }`}
         ></div>
         <div
-          className={`absolute -bottom-32 -right-32 w-[32rem] h-[32rem] rounded-full blur-3xl animate-pulse delay-1000 ${
-            isDarkMode ? "bg-purple-500/10" : "bg-purple-400/20"
-          }`}
+          className={`absolute -bottom-32 -right-32 w-[32rem] h-[32rem] rounded-full blur-3xl animate-pulse delay-1000 ${isDarkMode ? "bg-purple-500/10" : "bg-purple-400/20"
+            }`}
         ></div>
         <div
-          className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full blur-3xl animate-pulse delay-2000 ${
-            isDarkMode ? "bg-cyan-500/10" : "bg-cyan-400/20"
-          }`}
+          className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full blur-3xl animate-pulse delay-2000 ${isDarkMode ? "bg-cyan-500/10" : "bg-cyan-400/20"
+            }`}
         ></div>
         <div
-          className={`absolute top-0 right-1/4 w-64 h-64 rounded-full blur-3xl animate-pulse delay-3000 ${
-            isDarkMode ? "bg-indigo-500/10" : "bg-indigo-400/20"
-          }`}
+          className={`absolute top-0 right-1/4 w-64 h-64 rounded-full blur-3xl animate-pulse delay-3000 ${isDarkMode ? "bg-indigo-500/10" : "bg-indigo-400/20"
+            }`}
         ></div>
 
         {/* Enhanced Floating Particles */}
         {[...Array(30)].map((_, i) => (
           <div
             key={i}
-            className={`absolute w-1 h-1 rounded-full animate-float ${
-              isDarkMode ? "bg-blue-400/30" : "bg-blue-600/40"
-            }`}
+            className={`absolute w-1 h-1 rounded-full animate-float ${isDarkMode ? "bg-blue-400/30" : "bg-blue-600/40"
+              }`}
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -96,11 +90,10 @@ export default function Component() {
       <div className="absolute top-4 right-4 z-20">
         <button
           onClick={toggleTheme}
-          className={`p-3 rounded-full transition-all duration-300 backdrop-blur-sm border ${
-            isDarkMode
+          className={`p-3 rounded-full transition-all duration-300 backdrop-blur-sm border ${isDarkMode
               ? "bg-slate-800/50 border-slate-700/50 text-yellow-400 hover:bg-slate-700/50"
               : "bg-white/50 border-gray-300/50 text-blue-600 hover:bg-white/70"
-          }`}
+            }`}
         >
           {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
         </button>
@@ -109,17 +102,15 @@ export default function Component() {
       {/* Business Card Container */}
       <div className="z-10 w-full max-w-md">
         <div
-          className={`w-full h-full backdrop-blur-xl rounded-3xl shadow-2xl border relative overflow-hidden transition-all duration-300 ${
-            isDarkMode ? "bg-slate-800/90 border-slate-700/50" : "bg-white/90 border-gray-200/50"
-          }`}
+          className={`w-full h-full backdrop-blur-xl rounded-3xl shadow-2xl border relative overflow-hidden transition-all duration-300 ${isDarkMode ? "bg-slate-800/90 border-slate-700/50" : "bg-white/90 border-gray-200/50"
+            }`}
         >
           {/* Subtle Inner Glow */}
           <div
-            className={`absolute inset-0 rounded-3xl ${
-              isDarkMode
+            className={`absolute inset-0 rounded-3xl ${isDarkMode
                 ? "bg-gradient-to-br from-blue-500/5 to-purple-500/5"
                 : "bg-gradient-to-br from-blue-400/10 to-purple-400/10"
-            }`}
+              }`}
           ></div>
 
           <div className="card-content p-6 sm:p-8">
@@ -136,9 +127,8 @@ export default function Component() {
                 </div>
                 <div className="min-w-0 flex-1">
                   <h1
-                    className={`text-xl sm:text-2xl font-bold leading-tight ${
-                      isDarkMode ? "text-white" : "text-gray-900"
-                    }`}
+                    className={`text-xl sm:text-2xl font-bold leading-tight ${isDarkMode ? "text-white" : "text-gray-900"
+                      }`}
                   >
                     Mannai ITS
                   </h1>
@@ -164,9 +154,8 @@ export default function Component() {
                     e.stopPropagation()
                     handlePhoneClick()
                   }}
-                  className={`text-sm sm:text-base transition-colors underline min-w-0 hover:scale-105 transform duration-200 ${
-                    isDarkMode ? "text-gray-300 hover:text-green-400" : "text-gray-700 hover:text-green-600"
-                  }`}
+                  className={`text-sm sm:text-base transition-colors underline min-w-0 hover:scale-105 transform duration-200 ${isDarkMode ? "text-gray-300 hover:text-green-400" : "text-gray-700 hover:text-green-600"
+                    }`}
                 >
                   +974-1234-5678
                 </button>
@@ -182,9 +171,8 @@ export default function Component() {
                     e.stopPropagation()
                     handleEmailCopy()
                   }}
-                  className={`text-sm sm:text-base transition-colors flex items-center gap-2 min-w-0 hover:scale-105 transform duration-200 ${
-                    isDarkMode ? "text-gray-300 hover:text-blue-400" : "text-gray-700 hover:text-blue-600"
-                  }`}
+                  className={`text-sm sm:text-base transition-colors flex items-center gap-2 min-w-0 hover:scale-105 transform duration-200 ${isDarkMode ? "text-gray-300 hover:text-blue-400" : "text-gray-700 hover:text-blue-600"
+                    }`}
                 >
                   <span className="truncate">sys-sales@mannai.com.qa</span>
                   <Copy className="w-3 h-3 flex-shrink-0" />
@@ -201,9 +189,15 @@ export default function Component() {
                 <div className={`p-2 rounded-lg flex-shrink-0 ${isDarkMode ? "bg-purple-500/20" : "bg-purple-100"}`}>
                   <Globe className={`w-4 h-4 ${isDarkMode ? "text-purple-400" : "text-purple-600"}`} />
                 </div>
-                <span className={`text-sm sm:text-base min-w-0 ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
+                <a
+                  href="https://www.mannai-ict.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`text-sm sm:text-base min-w-0 ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}
+                >
                   www.mannai-ict.com
-                </span>
+                </a>
+
               </div>
 
               {/* Address */}
@@ -212,9 +206,8 @@ export default function Component() {
                   <MapPin className={`w-4 h-4 mt-0.5 ${isDarkMode ? "text-orange-400" : "text-orange-600"}`} />
                 </div>
                 <div
-                  className={`text-xs sm:text-sm leading-relaxed min-w-0 ${
-                    isDarkMode ? "text-gray-300" : "text-gray-700"
-                  }`}
+                  className={`text-xs sm:text-sm leading-relaxed min-w-0 ${isDarkMode ? "text-gray-300" : "text-gray-700"
+                    }`}
                 >
                   <p>P.B. No. 76, Building No. 72, Zone 57</p>
                   <p>East Industrial Street No. 100</p>
@@ -229,11 +222,10 @@ export default function Component() {
       {/* Tagline */}
       <div className="mt-6 z-10">
         <p
-          className={`text-sm italic text-center px-6 py-3 rounded-full backdrop-blur-sm border transition-all duration-300 ${
-            isDarkMode
+          className={`text-sm italic text-center px-6 py-3 rounded-full backdrop-blur-sm border transition-all duration-300 ${isDarkMode
               ? "text-gray-400 bg-gray-800/30 border-gray-700/30"
               : "text-gray-600 bg-white/30 border-gray-300/30"
-          }`}
+            }`}
         >
           "Securing Today, Safeguarding Tomorrow"
         </p>
